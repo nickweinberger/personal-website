@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Nick Weinberger</title>
+        <script>
+            // Javascript for function for donations
+            function donations()
+                {
+                    let number = document.querySelector('#number').value;
+                    if (isNaN(number))
+                    {
+                        document.querySelector = ("Please input a number");
+                    }
+                    document.querySelector('#result').innerHTML = 'Thank you for donating: $' + number;
+                }
+        </script>
+    </head>
+    <body>
+        <!--Nav Bar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <img src="NW_logo.png" alt="NW_logo" width="50" height="50">
+            <a class="navbar-brand" href="#">Nick Weinberger</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Fundraising<span class="sr-only">(current)</span></a>
+                    </li>
+                   <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Photos
+                        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="fam&friends.html">Fam & Friends</a>
+                        <a class="dropdown-item" href="landscapes.html">Landscapes</a>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="fundraiser_h1">Yale Rugby UK and Ireland Tour Fundraiser</h1>
+        <p></p>
+        <img src="rugby.JPG" alt="rugby" width="580" height="420" style="float: left">
+        <p class="rugby_paragraph">This page is to help me fundraise for the Yale Men's Rugby tour to Ireland and the U.K. in March of 2020.
+        This is a two-week-long tour where we will train alongside international teams, build relationships with rugby
+        clubs in universities such as Trinity College Dublin, Oxford, and Cambridge, and fully immerse ourselves in Irish
+        and British culture. Although we have received a number of generous donations from alumni, we are tasked with raising
+        over $30,000 in order to fund the trip's expenses.My teammate Cavan Walsh and I have decided to up the ante with some personal challenges
+        and rewards. On the first truly snowy,freezing day of winter, Cavan and I will toss on our swim trunks and for each $100 you all donate we will take one lap around
+        Old Campus and do a ten second snow angel. If we reach our overall goal of $1,000 we will grab a boombox and follow up our laps
+        with a Zumba/Dance class in the quad for all the people of Yale to enjoy.<br /><br /> If you feel so inclined, please donate below.
+        Thank you for your generosity,<br />
+        Nick Weinberger</p>
+
+        <!--Input button and submit button for donations-->
+        <form class="donations" onsubmit="donations(); return false;">
+            <input type = "text" name="number" placeholder="$" id="number">
+            <input class="donations" type="submit">
+        </form>
+        <div class="donations" id="result">
+            Please enter donation amount!
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
