@@ -1,0 +1,123 @@
+img
+{
+  float: none;
+}
+.navbar-brand
+{
+  color: blue;
+}
+.dropbtn
+{
+  background-color: white;
+  color: grey;
+  padding: 8.5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown
+{
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content
+{
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a
+{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover
+{
+  background-color: grey;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content
+{
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn
+{
+  background-color: white;
+  color: #383838;
+}
+
+.fundraiser_h1
+{
+  text-align: center;
+}
+
+.submit1
+{
+  text-align: center;
+}
+
+.rugby_paragraph
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 30px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.d-block w-100
+{
+  width: 1000px;
+  height: 1000px;
+}
+
+.FF
+{
+  text-align: center;
+}
+
+.wrapper
+{
+  background-image: url('skydive.jpeg');
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/*Controls Nick Weinberger*/
+
+.title
+{
+  color: white;
+  text-align: center;
+}
+
+/*Controls other about me info*/
+
+.subtitle
+{
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+.donations
+{
+  text-align: center;
+}
